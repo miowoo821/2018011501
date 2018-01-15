@@ -53,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void click2(View v)
     {
+        // volley預設中文編碼ansi-big5,要轉utf8,寫一個新的CLASS覆寫他
         RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-        StringRequest request = new StringRequest("https://www.mobile01.com/rss/news.xml",
+        StringRequest request = new utf8stringrequest("https://www.mobile01.com/rss/news.xml",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
