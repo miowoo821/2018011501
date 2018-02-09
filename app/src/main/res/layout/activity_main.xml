@@ -58,7 +58,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:visibility="invisible" />
 
         <ImageView
             android:id="@+id/imageView"
